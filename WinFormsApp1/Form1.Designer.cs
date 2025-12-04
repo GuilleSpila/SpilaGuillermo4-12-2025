@@ -1,0 +1,327 @@
+﻿namespace WinFormsApp1
+{
+    partial class Form1
+    {
+        /// <summary>
+        ///  Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        ///  Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        ///  Required method for Designer support - do not modify
+        ///  the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            lblCancha = new Label();
+            cbCancha = new ComboBox();
+            lblSocio = new Label();
+            cbSocio = new ComboBox();
+            lblInicio = new Label();
+            dtpInicio = new DateTimePicker();
+            lblFin = new Label();
+            dtpFin = new DateTimePicker();
+            btnRegistrar = new Button();
+            dgvReservas = new DataGridView();
+            btnCancelar = new Button();
+            dgvReporte = new DataGridView();
+            btnReporte = new Button();
+            grpSocio = new GroupBox();
+            lblNuevoNombre = new Label();
+            txtNuevoNombre = new TextBox();
+            lblNuevoDocumento = new Label();
+            txtNuevoDocumento = new TextBox();
+            lblNuevoCorreo = new Label();
+            txtNuevoCorreo = new TextBox();
+            btnRegistrarSocio = new Button();
+            grpReserva = new GroupBox();
+            ((System.ComponentModel.ISupportInitialize)dgvReservas).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dgvReporte).BeginInit();
+            SuspendLayout();
+            // 
+            // lblCancha
+            // 
+            lblCancha.AutoSize = true;
+            lblCancha.Location = new Point(15, 30);
+            lblCancha.Name = "lblCancha";
+            lblCancha.Size = new Size(93, 15);
+            lblCancha.TabIndex = 0;
+            lblCancha.Text = "Tipo de cancha";
+            // 
+            // cbCancha
+            // 
+            cbCancha.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbCancha.FormattingEnabled = true;
+            cbCancha.Location = new Point(130, 27);
+            cbCancha.Name = "cbCancha";
+            cbCancha.Size = new Size(300, 23);
+            cbCancha.TabIndex = 1;
+            cbCancha.SelectedIndexChanged += cbCancha_SelectedIndexChanged;
+            // 
+            // lblSocio
+            // 
+            lblSocio.AutoSize = true;
+            lblSocio.Location = new Point(460, 30);
+            lblSocio.Name = "lblSocio";
+            lblSocio.Size = new Size(36, 15);
+            lblSocio.TabIndex = 2;
+            lblSocio.Text = "Socio";
+            // 
+            // cbSocio
+            // 
+            cbSocio.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbSocio.FormattingEnabled = true;
+            cbSocio.Location = new Point(520, 27);
+            cbSocio.Name = "cbSocio";
+            cbSocio.Size = new Size(220, 23);
+            cbSocio.TabIndex = 3;
+            // 
+            // lblInicio
+            // 
+            lblInicio.AutoSize = true;
+            lblInicio.Location = new Point(15, 70);
+            lblInicio.Name = "lblInicio";
+            lblInicio.Size = new Size(101, 15);
+            lblInicio.TabIndex = 8;
+            lblInicio.Text = "Fecha/Hora inicio";
+            // 
+            // dtpInicio
+            // 
+            dtpInicio.CustomFormat = "dd/MM/yyyy HH:mm";
+            dtpInicio.Format = DateTimePickerFormat.Custom;
+            dtpInicio.Location = new Point(130, 67);
+            dtpInicio.Name = "dtpInicio";
+            dtpInicio.Size = new Size(220, 23);
+            dtpInicio.TabIndex = 9;
+            // 
+            // lblFin
+            // 
+            lblFin.AutoSize = true;
+            lblFin.Location = new Point(380, 70);
+            lblFin.Name = "lblFin";
+            lblFin.Size = new Size(86, 15);
+            lblFin.TabIndex = 10;
+            lblFin.Text = "Fecha/Hora fin";
+            // 
+            // dtpFin
+            // 
+            dtpFin.CustomFormat = "dd/MM/yyyy HH:mm";
+            dtpFin.Format = DateTimePickerFormat.Custom;
+            dtpFin.Location = new Point(520, 67);
+            dtpFin.Name = "dtpFin";
+            dtpFin.Size = new Size(220, 23);
+            dtpFin.TabIndex = 11;
+            // 
+            // btnRegistrar
+            // 
+            btnRegistrar.Location = new Point(12, 140);
+            btnRegistrar.Name = "btnRegistrar";
+            btnRegistrar.Size = new Size(760, 35);
+            btnRegistrar.TabIndex = 12;
+            btnRegistrar.Text = "Registrar reserva";
+            btnRegistrar.UseVisualStyleBackColor = true;
+            btnRegistrar.Click += btnRegistrar_Click;
+            // 
+            // dgvReservas
+            // 
+            dgvReservas.AllowUserToAddRows = false;
+            dgvReservas.AllowUserToDeleteRows = false;
+            dgvReservas.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvReservas.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvReservas.Location = new Point(12, 385);
+            dgvReservas.MultiSelect = false;
+            dgvReservas.Name = "dgvReservas";
+            dgvReservas.ReadOnly = true;
+            dgvReservas.RowHeadersVisible = false;
+            dgvReservas.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvReservas.Size = new Size(760, 200);
+            dgvReservas.TabIndex = 13;
+            // 
+            // btnCancelar
+            // 
+            btnCancelar.Location = new Point(202, 345);
+            btnCancelar.Name = "btnCancelar";
+            btnCancelar.Size = new Size(570, 30);
+            btnCancelar.TabIndex = 14;
+            btnCancelar.Text = "Cancelar reserva seleccionada";
+            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.Click += btnCancelar_Click;
+            // 
+            // dgvReporte
+            // 
+            dgvReporte.AllowUserToAddRows = false;
+            dgvReporte.AllowUserToDeleteRows = false;
+            dgvReporte.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dgvReporte.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dgvReporte.Location = new Point(12, 595);
+            dgvReporte.MultiSelect = false;
+            dgvReporte.Name = "dgvReporte";
+            dgvReporte.ReadOnly = true;
+            dgvReporte.RowHeadersVisible = false;
+            dgvReporte.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgvReporte.Size = new Size(760, 220);
+            dgvReporte.TabIndex = 15;
+            // 
+            // btnReporte
+            // 
+            btnReporte.Location = new Point(12, 345);
+            btnReporte.Name = "btnReporte";
+            btnReporte.Size = new Size(180, 30);
+            btnReporte.TabIndex = 16;
+            btnReporte.Text = "Generar reporte";
+            btnReporte.UseVisualStyleBackColor = true;
+            btnReporte.Click += btnReporte_Click;
+            // 
+            // grpSocio
+            // 
+            grpSocio.Controls.Add(txtNuevoCorreo);
+            grpSocio.Controls.Add(lblNuevoCorreo);
+            grpSocio.Controls.Add(txtNuevoDocumento);
+            grpSocio.Controls.Add(lblNuevoDocumento);
+            grpSocio.Controls.Add(txtNuevoNombre);
+            grpSocio.Controls.Add(lblNuevoNombre);
+            grpSocio.Controls.Add(btnRegistrarSocio);
+            grpSocio.Location = new Point(12, 185);
+            grpSocio.Name = "grpSocio";
+            grpSocio.Size = new Size(760, 150);
+            grpSocio.TabIndex = 21;
+            grpSocio.TabStop = false;
+            grpSocio.Text = "Registrar socio";
+            // 
+            // lblNuevoNombre
+            // 
+            lblNuevoNombre.AutoSize = true;
+            lblNuevoNombre.Location = new Point(15, 30);
+            lblNuevoNombre.Name = "lblNuevoNombre";
+            lblNuevoNombre.Size = new Size(54, 15);
+            lblNuevoNombre.TabIndex = 0;
+            lblNuevoNombre.Text = "Nombre";
+            // 
+            // txtNuevoNombre
+            // 
+            txtNuevoNombre.Location = new Point(130, 27);
+            txtNuevoNombre.Name = "txtNuevoNombre";
+            txtNuevoNombre.Size = new Size(610, 23);
+            txtNuevoNombre.TabIndex = 1;
+            // 
+            // lblNuevoDocumento
+            // 
+            lblNuevoDocumento.AutoSize = true;
+            lblNuevoDocumento.Location = new Point(15, 65);
+            lblNuevoDocumento.Name = "lblNuevoDocumento";
+            lblNuevoDocumento.Size = new Size(70, 15);
+            lblNuevoDocumento.TabIndex = 2;
+            lblNuevoDocumento.Text = "Documento";
+            // 
+            // txtNuevoDocumento
+            // 
+            txtNuevoDocumento.Location = new Point(130, 62);
+            txtNuevoDocumento.Name = "txtNuevoDocumento";
+            txtNuevoDocumento.Size = new Size(300, 23);
+            txtNuevoDocumento.TabIndex = 3;
+            // 
+            // lblNuevoCorreo
+            // 
+            lblNuevoCorreo.AutoSize = true;
+            lblNuevoCorreo.Location = new Point(450, 65);
+            lblNuevoCorreo.Name = "lblNuevoCorreo";
+            lblNuevoCorreo.Size = new Size(105, 15);
+            lblNuevoCorreo.TabIndex = 4;
+            lblNuevoCorreo.Text = "Correo electrónico";
+            // 
+            // txtNuevoCorreo
+            // 
+            txtNuevoCorreo.Location = new Point(520, 62);
+            txtNuevoCorreo.Name = "txtNuevoCorreo";
+            txtNuevoCorreo.Size = new Size(220, 23);
+            txtNuevoCorreo.TabIndex = 5;
+            // 
+            // btnRegistrarSocio
+            // 
+            btnRegistrarSocio.Location = new Point(130, 100);
+            btnRegistrarSocio.Name = "btnRegistrarSocio";
+            btnRegistrarSocio.Size = new Size(610, 30);
+            btnRegistrarSocio.TabIndex = 6;
+            btnRegistrarSocio.Text = "Registrar socio";
+            btnRegistrarSocio.UseVisualStyleBackColor = true;
+            btnRegistrarSocio.Click += btnRegistrarSocio_Click;
+            // 
+            // grpReserva
+            // 
+            grpReserva.Controls.Add(lblCancha);
+            grpReserva.Controls.Add(cbCancha);
+            grpReserva.Controls.Add(lblSocio);
+            grpReserva.Controls.Add(cbSocio);
+            grpReserva.Controls.Add(lblInicio);
+            grpReserva.Controls.Add(dtpInicio);
+            grpReserva.Controls.Add(lblFin);
+            grpReserva.Controls.Add(dtpFin);
+            grpReserva.Location = new Point(12, 12);
+            grpReserva.Name = "grpReserva";
+            grpReserva.Size = new Size(760, 120);
+            grpReserva.TabIndex = 22;
+            grpReserva.TabStop = false;
+            grpReserva.Text = "Datos de reserva";
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(784, 831);
+            Controls.Add(grpReserva);
+            Controls.Add(btnRegistrar);
+            Controls.Add(grpSocio);
+            Controls.Add(btnReporte);
+            Controls.Add(btnCancelar);
+            Controls.Add(dgvReservas);
+            Controls.Add(dgvReporte);
+            Name = "Form1";
+            Text = "Reservas";
+            Load += Form1_Load;
+            ((System.ComponentModel.ISupportInitialize)dgvReservas).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dgvReporte).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
+        }
+
+        #endregion
+
+        private System.Windows.Forms.Label lblCancha;
+        private System.Windows.Forms.ComboBox cbCancha;
+        private System.Windows.Forms.Label lblSocio;
+        private System.Windows.Forms.ComboBox cbSocio;
+        private System.Windows.Forms.Label lblInicio;
+        private System.Windows.Forms.DateTimePicker dtpInicio;
+        private System.Windows.Forms.Label lblFin;
+        private System.Windows.Forms.DateTimePicker dtpFin;
+        private System.Windows.Forms.Button btnRegistrar;
+        private System.Windows.Forms.DataGridView dgvReservas;
+        private System.Windows.Forms.Button btnCancelar;
+        private System.Windows.Forms.DataGridView dgvReporte;
+        private System.Windows.Forms.Button btnReporte;
+        private System.Windows.Forms.GroupBox grpSocio;
+        private System.Windows.Forms.Label lblNuevoNombre;
+        private System.Windows.Forms.TextBox txtNuevoNombre;
+        private System.Windows.Forms.Label lblNuevoDocumento;
+        private System.Windows.Forms.TextBox txtNuevoDocumento;
+        private System.Windows.Forms.Label lblNuevoCorreo;
+        private System.Windows.Forms.TextBox txtNuevoCorreo;
+        private System.Windows.Forms.Button btnRegistrarSocio;
+        private System.Windows.Forms.GroupBox grpReserva;
+    }
+}

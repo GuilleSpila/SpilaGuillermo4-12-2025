@@ -1,0 +1,225 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4899DA1F-3AEB-4EFE-B814-E6ECEDF086C0}|examenProg\\examenProg.csproj|c:\\users\\guillermo\\desktop\\examenprog\\examenprog\\examenprog\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4899DA1F-3AEB-4EFE-B814-E6ECEDF086C0}|examenProg\\examenProg.csproj|solutionrelative:examenprog\\appdbcontextfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBEC7157-ED31-4436-84DE-3857024A31E5}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\guillermo\\desktop\\examenprog\\examenprog\\winformsapp1\\winformsapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{BBEC7157-ED31-4436-84DE-3857024A31E5}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\winformsapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4899DA1F-3AEB-4EFE-B814-E6ECEDF086C0}|examenProg\\examenProg.csproj|c:\\users\\guillermo\\desktop\\examenprog\\examenprog\\examenprog\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4899DA1F-3AEB-4EFE-B814-E6ECEDF086C0}|examenProg\\examenProg.csproj|solutionrelative:examenprog\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBEC7157-ED31-4436-84DE-3857024A31E5}|WinFormsApp1\\WinFormsApp1.csproj|C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{BBEC7157-ED31-4436-84DE-3857024A31E5}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4899DA1F-3AEB-4EFE-B814-E6ECEDF086C0}|examenProg\\examenProg.csproj|c:\\users\\guillermo\\desktop\\examenprog\\examenprog\\examenprog\\tipocancha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4899DA1F-3AEB-4EFE-B814-E6ECEDF086C0}|examenProg\\examenProg.csproj|solutionrelative:examenprog\\tipocancha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4899DA1F-3AEB-4EFE-B814-E6ECEDF086C0}|examenProg\\examenProg.csproj|c:\\users\\guillermo\\desktop\\examenprog\\examenprog\\examenprog\\cancha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4899DA1F-3AEB-4EFE-B814-E6ECEDF086C0}|examenProg\\examenProg.csproj|solutionrelative:examenprog\\cancha.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4899DA1F-3AEB-4EFE-B814-E6ECEDF086C0}|examenProg\\examenProg.csproj|c:\\users\\guillermo\\desktop\\examenprog\\examenprog\\examenprog\\socio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4899DA1F-3AEB-4EFE-B814-E6ECEDF086C0}|examenProg\\examenProg.csproj|solutionrelative:examenprog\\socio.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4899DA1F-3AEB-4EFE-B814-E6ECEDF086C0}|examenProg\\examenProg.csproj|c:\\users\\guillermo\\desktop\\examenprog\\examenprog\\examenprog\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4899DA1F-3AEB-4EFE-B814-E6ECEDF086C0}|examenProg\\examenProg.csproj|solutionrelative:examenprog\\reserva.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBEC7157-ED31-4436-84DE-3857024A31E5}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\guillermo\\desktop\\examenprog\\examenprog\\winformsapp1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBEC7157-ED31-4436-84DE-3857024A31E5}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBEC7157-ED31-4436-84DE-3857024A31E5}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\guillermo\\desktop\\examenprog\\examenprog\\winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBEC7157-ED31-4436-84DE-3857024A31E5}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4899DA1F-3AEB-4EFE-B814-E6ECEDF086C0}|examenProg\\examenProg.csproj|c:\\users\\guillermo\\desktop\\examenprog\\examenprog\\examenprog\\examenprog.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4899DA1F-3AEB-4EFE-B814-E6ECEDF086C0}|examenProg\\examenProg.csproj|solutionrelative:examenprog\\examenprog.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BBEC7157-ED31-4436-84DE-3857024A31E5}|WinFormsApp1\\WinFormsApp1.csproj|c:\\users\\guillermo\\desktop\\examenprog\\examenprog\\winformsapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BBEC7157-ED31-4436-84DE-3857024A31E5}|WinFormsApp1\\WinFormsApp1.csproj|solutionrelative:winformsapp1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AppDbContextFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\examenProg\\AppDbContextFactory.cs",
+              "RelativeDocumentMoniker": "examenProg\\AppDbContextFactory.cs",
+              "ToolTip": "C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\examenProg\\AppDbContextFactory.cs",
+              "RelativeToolTip": "examenProg\\AppDbContextFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T20:13:14.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\WinFormsApp1\\Program.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\Program.cs",
+              "ToolTip": "C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\WinFormsApp1\\Program.cs",
+              "RelativeToolTip": "WinFormsApp1\\Program.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAABRwCUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T20:08:31.079Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\examenProg\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "examenProg\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\examenProg\\AppDbContext.cs",
+              "RelativeToolTip": "examenProg\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T20:08:23.149Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "examenProg.csproj",
+              "DocumentMoniker": "C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\examenProg\\examenProg.csproj",
+              "RelativeDocumentMoniker": "examenProg\\examenProg.csproj",
+              "ToolTip": "C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\examenProg\\examenProg.csproj",
+              "RelativeToolTip": "examenProg\\examenProg.csproj",
+              "ViewState": "AgIAAA0AAAAAAAAAAABBwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-04T20:08:17.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "WinFormsApp1.csproj",
+              "DocumentMoniker": "C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\WinFormsApp1\\WinFormsApp1.csproj",
+              "RelativeDocumentMoniker": "WinFormsApp1\\WinFormsApp1.csproj",
+              "ToolTip": "C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\WinFormsApp1\\WinFormsApp1.csproj",
+              "RelativeToolTip": "WinFormsApp1\\WinFormsApp1.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-04T20:02:37.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\WinFormsApp1\\Form1.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\Form1.cs",
+              "ToolTip": "C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\WinFormsApp1\\Form1.cs",
+              "RelativeToolTip": "WinFormsApp1\\Form1.cs",
+              "ViewState": "AgIAAKkAAAAAAAAAAEBVwK0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T20:02:18.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\WinFormsApp1\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\WinFormsApp1\\Form1.Designer.cs",
+              "RelativeToolTip": "WinFormsApp1\\Form1.Designer.cs",
+              "ViewState": "AgIAAEMBAAAAAAAAAEBVwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T20:01:42.547Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Reserva.cs",
+              "DocumentMoniker": "C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\examenProg\\Reserva.cs",
+              "RelativeDocumentMoniker": "examenProg\\Reserva.cs",
+              "ToolTip": "C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\examenProg\\Reserva.cs",
+              "RelativeToolTip": "examenProg\\Reserva.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAABfwA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T19:59:53.566Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Socio.cs",
+              "DocumentMoniker": "C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\examenProg\\Socio.cs",
+              "RelativeDocumentMoniker": "examenProg\\Socio.cs",
+              "ToolTip": "C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\examenProg\\Socio.cs",
+              "RelativeToolTip": "examenProg\\Socio.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T19:59:51.999Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Cancha.cs",
+              "DocumentMoniker": "C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\examenProg\\Cancha.cs",
+              "RelativeDocumentMoniker": "examenProg\\Cancha.cs",
+              "ToolTip": "C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\examenProg\\Cancha.cs",
+              "RelativeToolTip": "examenProg\\Cancha.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T19:59:49.18Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TipoCancha.cs",
+              "DocumentMoniker": "C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\examenProg\\TipoCancha.cs",
+              "RelativeDocumentMoniker": "examenProg\\TipoCancha.cs",
+              "ToolTip": "C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\examenProg\\TipoCancha.cs",
+              "RelativeToolTip": "examenProg\\TipoCancha.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T19:59:47.166Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Form1.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Guillermo\\Desktop\\examenProg\\examenProg\\WinFormsApp1\\Form1.cs",
+              "RelativeDocumentMoniker": "WinFormsApp1\\Form1.cs",
+              "ToolTip": "C:\\Users\\bosca\\source\\repos\\examenProg\\WinFormsApp1\\Form1.cs [Dise\u00F1o]",
+              "RelativeToolTip": "..\\..\\..\\..\\bosca\\source\\repos\\examenProg\\WinFormsApp1\\Form1.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-04T19:54:44.514Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

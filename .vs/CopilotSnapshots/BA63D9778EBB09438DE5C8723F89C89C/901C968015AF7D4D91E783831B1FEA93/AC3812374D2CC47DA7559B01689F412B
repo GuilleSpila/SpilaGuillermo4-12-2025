@@ -1,0 +1,193 @@
+﻿using examenProg;
+
+namespace WinFormsApp1
+{
+    public partial class Form1 : Form
+    {
+        private readonly List<Cancha> _canchas = new();
+        private readonly List<Socio> _socios = new();
+        private readonly List<Reserva> _reservas = new();
+        private readonly BindingSource _reservasBinding = new();
+        private int _nextReservaId = 1;
+
+        private class ReservaView
+        {
+            public int ReservaId { get; set; }
+            public string Socio { get; set; } = string.Empty;
+            public string Cancha { get; set; } = string.Empty;
+            public DateTime Inicio { get; set; }
+            public DateTime Fin { get; set; }
+            public string Estado { get; set; } = string.Empty;
+        }
+
+        public Form1()
+        {
+            InitializeComponent();
+            CargarDatosIniciales();
+            CargarCombos();
+            ConfigurarGrid();
+            RefrescarGrid();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            RefrescarGrid();
+        }
+
+        private void ConfigurarGrid()
+        {
+            dgvReservas.AutoGenerateColumns = false;
+            dgvReservas.Columns.Clear();
+            dgvReservas.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = nameof(ReservaView.ReservaId), HeaderText = "Reserva" });
+            dgvReservas.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = nameof(ReservaView.Socio), HeaderText = "Socio" });
+            dgvReservas.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = nameof(ReservaView.Cancha), HeaderText = "Cancha" });
+            dgvReservas.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = nameof(ReservaView.Inicio), HeaderText = "Inicio" });
+            dgvReservas.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = nameof(ReservaView.Fin), HeaderText = "Fin" });
+            dgvReservas.Columns.Add(new DataGridViewTextBoxColumn { DataPropertyName = nameof(ReservaView.Estado), HeaderText = "Estado" });
+            dgvReservas.DataSource = _reservasBinding;
+        }
+
+        private void RefrescarGrid()
+        {
+            var hoy = DateOnly.FromDateTime(DateTime.Now);
+            var now = DateTime.Now;
+            var vigentesHoy = _reservas
+                .Where(r => DateOnly.FromDateTime(r.FechaHoraInicio) == hoy || DateOnly.FromDateTime(r.FechaHoraFin) == hoy)
+                .Select(r =>
+                {
+                    var socio = _socios.FirstOrDefault(s => s.Id == r.SocioId);
+                    var cancha = _canchas.FirstOrDefault(c => c.Id == r.CanchaId);
+                    var estado = now >= r.FechaHoraInicio && now < r.FechaHoraFin
+                        ? "En curso"
+                        : now < r.FechaHoraInicio
+                        ? "Pendiente"
+                        : "Finalizado";
+                    return new ReservaView
+                    {
+                        ReservaId = r.Id,
+                        Socio = socio?.Nombre ?? "-",
+                        Cancha = cancha?.Nombre ?? "-",
+                        Inicio = r.FechaHoraInicio,
+                        Fin = r.FechaHoraFin,
+                        Estado = estado
+                    };
+                })
+                .OrderBy(v => v.Inicio)
+                .ToList();
+            _reservasBinding.DataSource = vigentesHoy;
+            _reservasBinding.ResetBindings(false);
+        }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+            var cancha = cbCancha.SelectedItem as Cancha;
+            var socio = cbSocio.SelectedItem as Socio;
+            if (cancha is null)
+            {
+                MessageBox.Show("Seleccione una cancha.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (socio is null)
+            {
+                MessageBox.Show("Seleccione un socio.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            var documento = txtDocumento.Text.Trim();
+            var correo = txtCorreo.Text.Trim();
+            if (string.IsNullOrWhiteSpace(documento))
+            {
+                MessageBox.Show("Ingrese el documento.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (string.IsNullOrWhiteSpace(correo) || !EsCorreoValido(correo))
+            {
+                MessageBox.Show("Ingrese un correo electrónico válido.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            var inicio = dtpInicio.Value;
+            var fin = dtpFin.Value;
+            if (fin <= inicio)
+            {
+                MessageBox.Show("La fecha/hora fin debe ser mayor que inicio.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (!cancha.Activa)
+            {
+                MessageBox.Show("La cancha no está activa.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            if (HaySolapamiento(cancha.Id, inicio, fin))
+            {
+                MessageBox.Show("La cancha ya está reservada en ese horario.", "Validación", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+            socio.Documento = documento;
+            socio.CorreoElectronico = correo;
+            var reserva = new Reserva
+            {
+                Id = _nextReservaId++,
+                CanchaId = cancha.Id,
+                SocioId = socio.Id,
+                FechaHoraInicio = inicio,
+                FechaHoraFin = fin
+            };
+            _reservas.Add(reserva);
+            RefrescarGrid();
+            MessageBox.Show("Reserva registrada.", "OK", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
+
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            if (dgvReservas.CurrentRow == null)
+            {
+                MessageBox.Show("Seleccione una reserva.");
+                return;
+            }
+            // DataBoundItem es ReservaView; buscar la reserva real por Id
+            if (dgvReservas.CurrentRow.DataBoundItem is ReservaView rv)
+            {
+                var r = _reservas.FirstOrDefault(x => x.Id == rv.ReservaId);
+                if (r is not null)
+                {
+                    _reservas.Remove(r);
+                    RefrescarGrid();
+                    MessageBox.Show("Reserva cancelada.");
+                }
+            }
+        }
+
+        private bool HaySolapamiento(int canchaId, DateTime inicio, DateTime fin)
+        {
+            return _reservas.Any(r => r.CanchaId == canchaId && r.FechaHoraInicio < fin && inicio < r.FechaHoraFin);
+        }
+        private bool EsCorreoValido(string correo)
+        {
+            try { var addr = new System.Net.Mail.MailAddress(correo); return addr.Address == correo; } catch { return false; }
+        }
+
+        private void CargarDatosIniciales()
+        {
+            _canchas.AddRange(new[]
+            {
+                new Cancha { Id = 1, Nombre = "Cancha Futbol1", Tipo = TipoCancha.Futbol, Activa = true },
+                new Cancha { Id = 2, Nombre = "Cancha Tenis1", Tipo = TipoCancha.Tenis, Activa = true },
+                new Cancha { Id = 3, Nombre = "Cancha Padel1", Tipo = TipoCancha.Padel, Activa = true },
+            });
+
+            _socios.AddRange(new[]
+            {
+                new Socio { Id = 1, Nombre = "Juan Perez", Documento = "12345678", CorreoElectronico = "juan@example.com" },
+                new Socio { Id = 2, Nombre = "Maria Gomez", Documento = "87654321", CorreoElectronico = "maria@example.com" },
+            });
+        }
+        private void CargarCombos()
+        {
+            cbCancha.DataSource = _canchas.Where(c => c.Activa).ToList();
+            cbCancha.DisplayMember = nameof(Cancha.Nombre);
+            cbCancha.ValueMember = nameof(Cancha.Id);
+            cbSocio.DataSource = _socios.ToList();
+            cbSocio.DisplayMember = nameof(Socio.Nombre);
+            cbSocio.ValueMember = nameof(Socio.Id);
+        }
+    }
+}

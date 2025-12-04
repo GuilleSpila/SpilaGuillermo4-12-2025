@@ -1,0 +1,14 @@
+C:\Users\bosca\source\repos\examenProg\examenProg\bin\Debug\net8.0\examenProg.deps.json
+C:\Users\bosca\source\repos\examenProg\examenProg\bin\Debug\net8.0\examenProg.dll
+C:\Users\bosca\source\repos\examenProg\examenProg\bin\Debug\net8.0\examenProg.pdb
+C:\Users\bosca\source\repos\examenProg\examenProg\obj\Debug\net8.0\examenProg.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bosca\source\repos\examenProg\examenProg\obj\Debug\net8.0\examenProg.AssemblyInfoInputs.cache
+C:\Users\bosca\source\repos\examenProg\examenProg\obj\Debug\net8.0\examenProg.AssemblyInfo.cs
+C:\Users\bosca\source\repos\examenProg\examenProg\obj\Debug\net8.0\examenProg.csproj.CoreCompileInputs.cache
+C:\Users\bosca\source\repos\examenProg\examenProg\obj\Debug\net8.0\examenProg.dll
+C:\Users\bosca\source\repos\examenProg\examenProg\obj\Debug\net8.0\refint\examenProg.dll
+C:\Users\bosca\source\repos\examenProg\examenProg\obj\Debug\net8.0\examenProg.pdb
+C:\Users\bosca\source\repos\examenProg\examenProg\obj\Debug\net8.0\ref\examenProg.dll
+C:\Users\bosca\source\repos\examenProg\examenProg\bin\Debug\net8.0\examenProg.runtimeconfig.json
+C:\Users\bosca\source\repos\examenProg\examenProg\obj\Debug\net8.0\examenProg.csproj.AssemblyReference.cache
+C:\Users\bosca\source\repos\examenProg\examenProg\obj\Debug\net8.0\examenProg.genruntimeconfig.cache
